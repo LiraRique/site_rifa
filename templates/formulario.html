@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Espaço Vida Terapia Alternativa</title>
+    
+<!-- ###########################################################################################-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+        integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="styleshe  
+    et" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    
+    <!-- Your custom styles (optional) -->
+    <link href="../static/css/gerenciar_Usuarios.css" rel="stylesheet">
+  
+    
+    
+<!-- ###########################################################################################-->
+   
+    <link rel="shortcut icon" href="../static/imagens/logo.jpg" />
+
+</head>
+<body>
+     
+
+                        <!--  INICIO CONTEUDO 1° CARD CADASTRAR USUARIO  -->
+
+                        <form action="{{url_for('cadastrar_cliente')}}" method="POST">
+
+                                            <input  data-name="entrada"
+                                                type="text" name="nome_usuario" id="nome_usuario"
+                                                class="form-control-dadosUsuario input-lg"
+                                                placeholder="Nome* "
+                                                onblur="formatanomeUsuario(this.value)" autofocus
+                                                required>
+                                          
+                                                </div>
+
+                                    
+
+                                    <!--###### FIM DADOS PESSOAIS DE USUARIO ##### -->
+
+                                    <!--###### DADOS DE LOGIN DO USUARIO ##### -->
+
+                                    
+                            
+                        
+                        <div class="modal-footer">
+                            <div class="btn-group">
+                                <button class="btn btn-danger" data-dismiss="modal"><span
+                                        class="glyphicon glyphicon-remove"></span>
+                                    Cancelar</button>
+                                <button class="btn btn-primary"><span
+                                        class="glyphicon glyphicon-check"></span>
+                                    Salvar</button>
+                            </div>
+                        </div>
+
+         
+           
+  
+    <!-- ############ FIM CONFIGURAÇÕES DO CARD ###########-->
+
+    <!--Fim 1° CARD-->
+
+
+
+                        
+</body>
+
+
+
+</br></br></br></br></br></br></br></br></br></br></br></br>
+    <footer>
+        <div class="card-body text-center">
+         <h4 class="text-white"><p>&copy; Copyright Espaço Vida Terapia Alternativa 2019 </p> </h4>
+         <p class="h5 text-white"> for Ecommerce, marketplace, booking websites 
+         and product landing pages</p>   <br>
+       </div>
+      
+      </footer>
+
+</html>
