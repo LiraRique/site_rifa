@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Espaço Vida Terapia Alternativa</title>
+
+
+    <link href="../static/estilo_formulario.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../static/imagens/logo.jpg" />
+
+</head>
+<body class="body">
+     
+
+                        <!--  INICIO CONTEUDO 1° CARD CADASTRAR USUARIO  -->
+                        <div class="div-titulo">
+                            <h1>Numeros Selecionados:</h1>
+                        </div>
+                                            <div class="container-botoes">                                                
+                                                <script>
+                                                            const queryString = window.location.search;
+
+                                                            const urlParams = new URLSearchParams(queryString);
+                                                            x=0;
+                                                            var page_type = 0;
+                                                            console.log(page_type);
+                                                            while(x<100){
+                                                                page_type= urlParams.get('btn_'+x);
+                                                                if(page_type == "on"){
+                                                                    document.write("<div class='botoes' id='"+x+"'>"+x+"</div>");
+                                                                }
+                                                                x++;
+                                                            }
+
+
+                                                </script>
+                                            </div>
+                                            <div class="div-titulo2"><h2>Cadastrar Dados </h2></div>
+                                            <div class="container-form1">
+                                                <div class="nome">
+                                                    Nome:*
+                                                    <input  data-name="entrada"
+                                                        type="text" name="nome_usuario" id="nome_usuario"
+                                                        class="form-control-dadosUsuario input-lg"
+                                                        onblur="formatanomeUsuario(this.value)" autofocus
+                                                        required>
+                                                </div>
+                                                <!-- 
+                                                <input data-name="entrada" 
+                                                    type="text"  maxlength="11" pattern="([0-9]{8})" 
+                                                    class="form-control-dadosUsuario  input-lg"
+                                                    name="cpf" id="cpf"  placeholder="CPF*"
+                                                    required>
+                                                    -->
+                                                <div>
+                                                    CPF:*
+                                                    <input data-name="entrada" 
+                                                    type="text"   
+                                                    class="form-control-dadosUsuario  input-lg"
+                                                    name="cpf" id="cpf" 
+                                                    required>
+                                                </div>
+                                               
+                                              
+                                                <div>
+                                                    CEP:*
+                                                <input data-name="entrada" 
+                                                    type="text" maxlength="8" pattern="([0-9]{8})"
+                                                    class="form-control-dadosUsuario  input-lg"
+                                                    name="cep" id="cep" 
+                                                    required>
+                                                </div>
+                                            </div>
+                                            <div class="container-form1" >      
+                                                <div>   
+                                                    Cidade:*
+                                                    <input type="text" data-name="entrada" class="form-control-dadosUsuario input-lg"
+                                                        name="cidade" id="cidade" required>
+                                                </div>  
+                                                <div class="form-Select-UF">
+                                                    Unidade Federal:*
+                                                    <select class="form-list-UF" id="UF" name="uf" required="required">
+                                                        <option value="">Selecione</option>
+                                                        <option value="AC">AC</option>
+                                                        <option value="AL">AL</option>
+                                                        <option value="AP">AP</option>
+                                                        <option value="AM">AM</option>
+                                                        <option value="BA">BA</option>
+                                                        <option value="CE">CE</option>
+                                                        <option value="DF">DF</option>
+                                                        <option value="ES">ES</option>
+                                                        <option value="GO">GO</option>
+                                                        <option value="MA">MA</option>
+                                                        <option value="MS">MS</option>
+                                                        <option value="MT">MT</option>
+                                                        <option value="MG">MG</option>
+                                                        <option value="PA">PA</option>
+                                                        <option value="PB">PB</option>
+                                                        <option value="PR">PR</option>
+                                                        <option value="PE">PE</option>
+                                                        <option value="PI">PI</option>
+                                                        <option value="RJ">RJ</option>
+                                                        <option value="RN">RN</option>
+                                                        <option value="RS">RS</option>
+                                                        <option value="RO">RO</option>
+                                                        <option value="RR">RR</option>
+                                                        <option value="SC">SC</option>
+                                                        <option value="SP">SP</option>
+                                                        <option value="SE">SE</option>
+                                                        <option value="TO">TO</option>
+                                                    </select>
+                                                </div>
+                                                <div>
+                                                    Endereço:*
+                                                    <input data-name="entrada"
+                                                        type="text" name="endereco" id="endereco"
+                                                        class="form-control-dadosUsuario input-lg" required>
+                                                </div>
+                                            </div>
+                                            <div class="container-form1">
+                                                <div>
+                                                    Número de Endereço:*
+                                                    <input data-name="entrada"
+                                                        type="text" name="numero_endereco"
+                                                        id="numero_endereco"
+                                                        class="form-control-dadosUsuario input-lg" required>
+                                                </div>
+                                                <div>
+                                                    Telefone:*
+                                                    <input data-name="entrada"
+                                                        type="tel" name="telefone" id="telefone"
+                                                        class="form-control-dadosUsuario input-lg" >
+                                                </div>
+                                                <div>
+                                                    Celular:*
+                                                    <input data-name="entrada"
+                                                        type="tel" name="celular" id="celular"
+                                                        class="form-control-dadosUsuario input-lg" required>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="container-form2">
+                                                E-mail:*
+                                                <input data-name="entrada" 
+                                                type="email" Class="form-control-dadosUsuario  input-lg"
+                                                name="email" id="email"  
+                                                required>
+                                            </div>
+                                    
+
+                                    <!--###### FIM DADOS PESSOAIS DE USUARIO ##### -->
+
+                                    <!--###### DADOS DE LOGIN DO USUARIO ##### -->
+
+                                    
+                            
+                        
+                        <div class="modal-footer">
+                            <div class="btn-group">
+                                <a href="{{url_for('pagina_rifa')}}"><button class="btn btn-danger" data-dismiss="modal"><span
+                                        class="glyphicon glyphicon-remove"></span>
+                                    Voltar</button></a>
+                                <button class="btn btn-primary"><span
+                                        class="glyphicon glyphicon-check"></span>
+                                    Salvar</button>
+                            </div>
+                        </div>
+
+         
+           
+  
+    <!-- ############ FIM CONFIGURAÇÕES DO CARD ###########-->
+
+    <!--Fim 1° CARD-->
+
+
+
+                        
+</body>
+
+
+</html>
