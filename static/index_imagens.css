@@ -1,0 +1,132 @@
+.how-section1{
+    margin-top:-15%;
+    padding: 10%;
+}
+.how-section1 h4{
+    color: #ffa500;
+    font-weight: bold;
+    font-size: 30px;
+}
+.how-section1 .subheading{
+    color: #3931af;
+    font-size: 20px;
+}
+.how-section1 .row
+{
+    margin-top: 10%;
+}
+
+.how-img img{
+    width: 20%;
+    max-width: 300px;
+    background-color: gray;
+    text-align: center;
+}
+
+.botoes{
+ 
+    display: none;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 75px 75px 75px 75px 75px 75px 75px 75px 75px 75px;
+    margin-left: 20px;
+}
+input {
+    display: none;
+}
+:checked + label{
+    background-color: blue;
+    color: white;
+    border: 2px solid white;
+    transition: 0.5s;
+}
+:checked + label:hover{
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+}
+
+label {
+    width: 70px;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 12px;
+    background-color: rgb(146, 245, 64);
+    color:white;
+    border: 2px solid white;
+    font-weight: bold;
+    padding-top: 15%;
+}
+.botoes_vermelhos{
+    background-color: red;
+    border: 3px solid white;
+  }
+.botoes_vermelhos:hover{
+    width: 70px;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 12px;
+    background-color: red;
+    color:white;
+    border: 3px solid white;
+    font-weight: bold;
+    padding-top: 15%;
+}
+label:hover{
+    background-color: white;
+    color: rgb(146, 245, 64);
+    border: 2px solid rgb(146, 245, 64);
+    transition: 0.5s;
+}
+
+
+
+
+.footer_teste{
+    margin-left: 691px;
+}
+
+
+.footer-copyright{
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right:190px;
+    margin-top: -28px;
+}
+
+
+#custom-search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+    width: 450px;
+    margin-left: 450px;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 1px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 1px 0 6px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 15px;
+}
