@@ -1,0 +1,33 @@
+.tabela_consulta{
+    margin-top: 120px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn{
+    margin-left: auto;
+    margin-right: 200px;
+}
+.usuario{
+    text-align: justify;
+    margin-left: 165px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.usuario_cpf{
+    text-align: justify;
+    margin-left: 165px;
+    font-size: 25px;
+    margin-bottom: -30px;
+}
+.footer_teste{
+    margin-left: 691px;
+    margin-top: 100px;
+}
+
+.footer-copyright{
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right:500px;
+}
