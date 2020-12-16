@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sorteios LSX </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../static/fotos/logolsx.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="../static/index_imagens.css"/>
+    <script src="../static/JS/carrosel.js"></script>  
+    
+    
+<!--#####################################################################################-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<link href="../static/gerenciar_Usuarios.css" rel="stylesheet">
+<link href="../static/consultar.css" rel="stylesheet">
+
+<!--###########################################################################################-->
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href=""> <img class="logo" src="../static/fotos/logolsx.png"> </a>
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbar1">                 
+                
+                
+            <a href="{{url_for('pagina_rifa')}}" class="btn btn-danger" data-dismiss="modal">
+                Voltar</a>
+                             
+        </div>
+    </nav>
+                                                                                 
+    {% for exibe_nome in exibe_lista_nome %}  
+    <div class="usuario">Bem vindo, {{exibe_nome.nome_pessoa}}</div>
+    <div class="usuario_cpf">CPF: {{exibe_nome.cpf_pessoa}}</div>
+    {% endfor %}
+    <table class="table tabela_consulta" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Números Selecionados</th>
+                <th>Status do Número</th>
+                <th>Data de compensação</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for exibe_rifa in exibe_lista_rifa %}  
+            <tr>
+                 
+                <td>{{exibe_rifa.numero_rifa}}</td>
+                <td>{{exibe_rifa.status_rifa}}</td>
+                <td>{{exibe_rifa.data_compensacao}}</td>
+                
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+    <!-- Footer -->
+    <footer class="page-footer">
+
+        <div class="footer_teste">
+            <!-- Facebook -->
+            <a class="fb-ic" href="#">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>                          
+            <!--Instagram-->
+            <a class="ins-ic" href="#">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="footer-copyright">© 2020 Copyright: 
+            <a>Sorteios LSX</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+        <!-- Footer -->
+
+</body>
